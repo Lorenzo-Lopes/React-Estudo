@@ -21,7 +21,7 @@ function App() {
         <SayMyName nome = 'lorenzo'/>
         <SayMyName nome = 'joao'/>
         <SayMyName nome = {nome}/>
-        <p>{Pessoa(pessoa)}</p>
+        {Pessoa(pessoa)}
         <List/>
       </div>
   );
