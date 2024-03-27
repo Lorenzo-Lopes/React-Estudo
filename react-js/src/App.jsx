@@ -1,25 +1,24 @@
 import './App.css';
 import HelloWorld from './components/HelloWorld';
-import Soma from './components/Soma';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const nome = 'Lorenzo Lopes Costa'
-  function soma(a,b){
-    return a+b;
+  const nome = 'Bonny'
+  const pessoa ={
+    nome:'Lorenzo',
+    idade:25,
+    profissao:'Programador',
+    foto:"https://via.placeholder.com/150x150"
   }
-  const agorasim = 'jsx>js'
-  const url="https://via.placeholder.com/190x150"
+  
   return (
       <div className='App'>
-
-        <h1>{nome}</h1>
-        <p>Soma Local: {soma(2,4)}</p>
-        <p>{agorasim}</p>
-        <img src={url} alt="Minha img"/>
         <HelloWorld/>
-        <p>Soma importada: {Soma(9,4)}</p>
-       
-
+        <SayMyName nome = 'lorenzo'/>
+        <SayMyName nome = 'joao'/>
+        <SayMyName nome = {nome}/>
+        <p>{Pessoa(pessoa)}</p>
       </div>
   );
 }
