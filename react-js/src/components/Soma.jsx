@@ -1,4 +1,4 @@
-function Soma(a,b){
-    return a+b
+function Soma(a, b) {
+  return a + b
 }
 export default Soma

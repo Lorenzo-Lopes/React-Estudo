@@ -3,6 +3,7 @@ import HelloWorld from './components/HelloWorld';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import List from './components/List';
 
 function App() {
   const nome = 'Bonny'
@@ -21,6 +22,7 @@ function App() {
         <SayMyName nome = 'joao'/>
         <SayMyName nome = {nome}/>
         <p>{Pessoa(pessoa)}</p>
+        <List/>
       </div>
   );
 }
