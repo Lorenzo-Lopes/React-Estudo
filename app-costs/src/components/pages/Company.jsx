@@ -6,4 +6,4 @@ function Company(){
     </>
   )
 }
-export default Company
+export default Company;
